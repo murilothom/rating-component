@@ -59,8 +59,11 @@ button:hover {
   border-radius: 1rem;
 }
 
-.container h1 {
+.container .main-font {
   margin-bottom: 0.75rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
 }
 
 .content-form {
@@ -124,6 +127,36 @@ button:hover {
   background: hsl(25, 97%, 53%);
 }
 
+.content-submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-submit.disabled {
+  display: none;
+}
+
+.content-submit img {
+  width: 50%;
+  margin: 1rem;
+}
+
+.content-submit .rated {
+  color: hsl(25, 97%, 53%);
+  background: hsl(213, 19%, 18%);
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.content-submit .text {
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
 /*Responsive*/
 @media (max-width: 400px) {
   .container {
@@ -166,66 +199,4 @@ button:hover {
   .content-submit .rated {
     font-size: 14px;
   }
-}
-/* 
-  .container h1 {
-    margin-bottom: 0.75rem;
-    font-size: 1.5rem;
-  }
-
-
-
-  .star {
-    margin-bottom: 1rem;
-    height: 40px;
-    width: 40px;
-  }
-  .star img {
-    height: 14px;
-    width: 14px;
-  }
-
-  .radio {
-    margin: 1rem 0;
-    height: 40px;
-    width: 40px;
-  }
-
-  .radio label {
-    font-size: 14px;
-  }
-
-  button {
-    font-size: 14px;
-  }
-} */
-
-.content-submit {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.content-submit.disabled {
-  display: none;
-}
-
-.content-submit img {
-  width: 50%;
-  margin: 1rem;
-}
-
-.content-submit .rated {
-  color: hsl(25, 97%, 53%);
-  background: hsl(213, 19%, 18%);
-  padding: 0.5rem 0.75rem;
-  border-radius: 1rem;
-  margin: 1rem 0 2rem 0;
-}
-
-.content-submit .text {
-  text-align: center;
-  line-height: 1.5;
-  margin-bottom: 1rem;
 }
